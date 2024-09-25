@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int MAXSIZE = 8;
-int stack[8];
-int top = -1;
+int MAXSIZE = 8; // Array to represent the stack
+int stack[8]; // Array to represent the stack
+int top = -1; // Top pointer to keep track of the stack's top element
 
 /* Check if the stack is empty */
 int isempty(){
