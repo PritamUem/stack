@@ -33,9 +33,15 @@ int peek(){
 /* Function to delete from the stack */
 int pop(){
    int data;
-   if(!isempty()) {
-      data = stack[top];
-      top = top - 1;
+   if(!isempty()) {                               //if(!isfull()) {:
+
+                                                //This is an if statement that checks if the stack is not full.
+                                                //The function isfull() returns a boolean value (either true or false), and the ! (logical NOT operator) negates that value.
+                                                //So, !isfull() will be true if the stack is not full and false if it is full.
+                                                //If the stack is not full, the code inside the braces { ... } will be executed
+
+      data = stack[top]; //After this line, data will hold the value 30, and you can now use this value in further operations
+      top = top - 1; //top = top - 1;, the top moves down
       return data;
    } else {
       printf("Could not retrieve data, Stack is empty.\n");
